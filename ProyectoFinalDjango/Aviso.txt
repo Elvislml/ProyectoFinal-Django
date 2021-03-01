@@ -1,6 +1,13 @@
 - En la carpeta BD se encuentra la Base de datos usada
-- Si monta la BD en otra maquina no olvidar cambiar el usuario, contraseña y puerto, en el arvhico .env de LumenProductoApp
+- Si monta la BD en otra maquina no olvidar cambiar el usuario, contraseÃ±a y puerto, en el arvhico .env de LumenProductoApp
 - Virtual es el nombre del Entorno.
 - Para poder visualizar los datos en Android se debe esperar unos segundos
 - ProductoApp es el proyecto en Django
 
+LUMEN
+
+- Ver todos los Proveedores : http://localhost:8888/proveedor/listaProveedores
+- Archivos JSON : http://localhost:8888/proveedor/listaJson
+- crear Proveedores : http://localhost:8888/proveedor/create (POSTMAN)
+
+- Ver Productos : http://localhost:8888/producto/listaProductos
