@@ -1,0 +1,5 @@
+- En la carpeta BD se encuentra la Base de datos usada
+- Si monta la BD en otra maquina no olvidar cambiar el usuario, contraseña y puerto, en el arvhico .env de LumenProductoApp
+- Virtual es el nombre del Entorno.
+- Para poder visualizar los datos en Android se debe esperar unos segundos
+

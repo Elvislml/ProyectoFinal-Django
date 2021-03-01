@@ -1,0 +1,24 @@
+
+.container {
+    max-width: 100%;
+    padding: 10px;
+}
+
+.texto h1{
+    padding: 20px;
+    text-align: center;
+}
+
+.carousel-inner img {
+    opacity: 0.7;
+    height: 600px;
+    max-width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.carousel-inner h5{
+    color: darkred;
+    font-size: 50px;
+    font-family: sans-serif;
+}

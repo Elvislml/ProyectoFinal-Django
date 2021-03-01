@@ -1,0 +1,33 @@
+{% extends 'master.html' %}
+{% load static %}
+{% block contenido %}
+<div class="container">
+    <div class="row p-4">
+        <table class="table table-info">
+            <thead>
+                <tr class="table table-dark">
+                    <th>Nombre del Producto</th>
+                    <th>Cantidad Disponible</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody id="tasks">
+                {%for producto in listaProductos %}
+                <tr>
+                    <td>{{producto.nombreProducto}}</td>
+                    <td>{{producto.cantidad}}</td>
+                    <td>{{producto.precio}}</td>
+                    <td>
+                        <a href="{% url 'comprar' producto.producto_id %}"><img
+                                src="{% static 'Img/Icons/comprar.png' %}" title="Comprar"></a>
+                    </td>
+                </tr>
+                {%endfor%}
+            </tbody>
+        </table>
+    </div>
+    <a href="{% url 'listaCompras'%}"><button type="submit" class="btn btn-primary"
+            style="display: block; margin-left: auto; margin-right: auto;">Ver Lista de Compras </button></a>
+</div>
+
+{% endblock %}

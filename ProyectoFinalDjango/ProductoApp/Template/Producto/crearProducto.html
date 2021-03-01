@@ -1,0 +1,16 @@
+{% extends 'master.html' %}
+
+{% block contenido %}
+<div class="container">
+    <form method="POST" class="row g-3" style="padding: 20px;"> {% csrf_token %}
+        <div class="col-md-6" style="display: block; margin-left: auto; margin-right: auto;">
+            {{formProducto.as_p}}
+        </div>
+        <div class="col-12">
+            <button type="submit" type="button" class="btn btn-primary"
+                style="display: block; margin-left: auto; margin-right: auto;">Crear</button>
+        </div>
+    </form>
+</div>
+
+{% endblock %}
