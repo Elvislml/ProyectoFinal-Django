@@ -12,3 +12,9 @@ $router->group(['prefix'=>'proveedor'], function($router){
     $router->get('listaJson','ProveedorController@allJson');
     $router->post('crearProv','ProveedorController@create');
 });
+
+$router->group(['prefix'=>'producto'], function($router){
+    $router->get('listaProductos','ProductoController@allProducto');
+    $router->post('crearProduc','ProductoController@create');
+});
+

@@ -6,8 +6,7 @@ use App\Models\Proveedor;
 use App\Http\Helper\ResponseBilder;
 use DB;
 
-class ProveedorController extends Controller
-{
+class ProveedorController extends Controller{
     /**
      * Create a new controller instance.
      *
